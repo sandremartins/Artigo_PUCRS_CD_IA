@@ -24,4 +24,9 @@ mkdir dags
 cd..
 docker run -d -p 8080:8080 -v "$PWD/airflow/dags:/opt/airflow/dags/" --entrypoint=/bin/bash --name airflow apache/airflow:2.1.1-python3.8 -c '(airflow db init && airflow users create --username admin --password rhengajamento --firstname Alessandre --lastname Martins --role Admin --email sandremartins@gmail.com); airflow webserver & airflow scheduler'
 #  Instale as bibliotecas necessárias para o ambiente airflow
+# conectar no airflow
+docker container exec -it airflowrhengajamento bash
 
+pip install pymysql xlrd openpyxl minio
+
+# acessar o airflow via http://localhost:8080/login/
