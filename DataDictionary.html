@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <!-- Embedded style sheet -->
+    <style>
+        #content {
+            display: block;
+        }
+
+        .internal {
+            display: block;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container external internal" id="content">
+            <div id="data-dictionary" class="section level2">
+                <h2>Data Dictionary</h2>
+                <table>
+                <thead>
+                <tr>
+                <th style="text-align:left;">
+                Feature
+                </th>
+                <th style="text-align:left;">
+                Description
+                </th>
+                <th style="text-align:left;">
+                DataType
+                </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td style="text-align:left;">
+                Employee Name
+                </td>
+                <td style="text-align:left;">
+                Nome completo do funcionário
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                EmpID
+                </td>
+                <td style="text-align:left;">
+                O ID do funcionário é exclusivo para cada funcionário
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                MarriedID
+                </td>
+                <td style="text-align:left;">
+                A pessoa é casada (1 ou 0 para sim ou não)
+                </td>
+                <td style="text-align:left;">
+                Binary
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                MaritalStatusID
+                </td>
+                <td style="text-align:left;">
+                Código de estado civil que corresponde ao campo de texto MaritalDesc
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                EmpStatusID
+                </td>
+                <td style="text-align:left;">
+                Código de status de emprego que corresponde ao campo de texto EmploymentStatus
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                DeptID
+                </td>
+                <td style="text-align:left;">
+                Código de identificação do departamento que corresponde ao departamento em que o funcionário trabalha
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                PerfScoreID
+                </td>
+                <td style="text-align:left;">
+                Código de pontuação de desempenho que corresponde à pontuação de desempenho mais recente do funcionário
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                FromDiversityJobFairID
+                </td>
+                <td style="text-align:left;">
+                O funcionário foi originado da feira de empregos Diversity? 1 ou 0 para sim ou não
+                </td>
+                <td style="text-align:left;">
+                Binary
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Salary
+                </td>
+                <td style="text-align:left;">
+                O salário anual da pessoa. $ EUA. Dólares.
+                </td>
+                <td style="text-align:left;">
+                Float
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Termd
+                </td>
+                <td style="text-align:left;">
+                Este funcionário foi demitido - 1 ou 0
+                </td>
+                <td style="text-align:left;">
+                Binary
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                PositionID
+                </td>
+                <td style="text-align:left;">
+                Um número inteiro indicando a posição da pessoa
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Position
+                </td>
+                <td style="text-align:left;">
+                O nome/título do texto da posição que a pessoa tem
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                State
+                </td>
+                <td style="text-align:left;">
+                O estado em que a pessoa vive
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Zip
+                </td>
+                <td style="text-align:left;">
+                Zip code do funcionário
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                DOB
+                </td>
+                <td style="text-align:left;">
+                Data de nascimento do funcionário
+                </td>
+                <td style="text-align:left;">
+                Date
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Sex
+                </td>
+                <td style="text-align:left;">
+                Sexo - M ou F
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                MaritalDesc
+                </td>
+                <td style="text-align:left;">
+                O estado civil da pessoa (divorciada, solteira, viúva, separada, etc.)
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                CitizenDesc
+                </td>
+                <td style="text-align:left;">
+                Descrição para saber se a pessoa é Cidadã ou Não Cidadão Elegível
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                HispanicLatino
+                </td>
+                <td style="text-align:left;">
+                Campo Sim ou Não para saber se o funcionário é hispânico/latino
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                RaceDesc
+                </td>
+                <td style="text-align:left;">
+                Descrição/texto da etnia com a qual a pessoa se identifica
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                DateofHire
+                </td>
+                <td style="text-align:left;">
+                Data em que a pessoa foi contratada
+                </td>
+                <td style="text-align:left;">
+                Date
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                DateofTermination
+                </td>
+                <td style="text-align:left;">
+                Data em que a pessoa foi rescindida, só preenchida se, de fato, Termd = 1
+                </td>
+                <td style="text-align:left;">
+                Date
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                TermReason
+                </td>
+                <td style="text-align:left;">
+                Um motivo/descrição de texto para o motivo pelo qual a pessoa foi demitida
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                EmploymentStatus
+                </td>
+                <td style="text-align:left;">
+                Uma descrição/categoria do status de emprego da pessoa. Qualquer pessoa que esteja trabalhando em tempo integral = Ativo
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Department
+                </td>
+                <td style="text-align:left;">
+                Nome do departamento em que a pessoa trabalha
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                ManagerName
+                </td>
+                <td style="text-align:left;">
+                O nome do gerente imediato da pessoa
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                ManagerID
+                </td>
+                <td style="text-align:left;">
+                Um identificador exclusivo para cada gerente.
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                RecruitmentSource
+                </td>
+                <td style="text-align:left;">
+                O nome da fonte de recrutamento onde o funcionário foi recrutado
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                PerformanceScore
+                </td>
+                <td style="text-align:left;">
+                Texto/categoria da Pontuação de Desempenho (Excede as expectativas, Atende às expectativas, Abaixo das expectativas(PIP), Excepcional)
+                </td>
+                <td style="text-align:left;">
+                Text
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                EngagementSurvey
+                </td>
+                <td style="text-align:left;">
+                Resultados da última pesquisa de engajamento, gerenciada pelo nosso parceiro externo
+                </td>
+                <td style="text-align:left;">
+                Float
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                EmpSatisfaction
+                </td>
+                <td style="text-align:left;">
+                Um índice básico de satisfação entre 1 e 5, conforme relatado em uma recente pesquisa de satisfação dos funcionários
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                SpecialProjectsCount
+                </td>
+                <td style="text-align:left;">
+                O número de projetos especiais em que o funcionário trabalhou nos últimos 6 meses
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                LastPerformanceReviewDate
+                </td>
+                <td style="text-align:left;">
+                A data mais recente da última revisão de desempenho da pessoa.
+                </td>
+                <td style="text-align:left;">
+                Date
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                DaysLateLast30
+                </td>
+                <td style="text-align:left;">
+                O número de vezes que o funcionário se atrasou para trabalhar nos últimos 30 dias
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                <tr>
+                <td style="text-align:left;">
+                Absences
+                </td>
+                <td style="text-align:left;">
+                O número de vezes que o funcionário se ausentou do trabalho.
+                </td>
+                <td style="text-align:left;">
+                Integer
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+    </body>
+
+</html>
