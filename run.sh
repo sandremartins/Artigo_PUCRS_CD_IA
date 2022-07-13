@@ -30,3 +30,15 @@ docker container exec -it airflowrhengajamento bash
 pip install pymysql xlrd openpyxl minio
 
 # acessar o airflow via http://localhost:8080/login/
+
+# pre requisito para instalar pycarest no macos M1
+brew install cmake          
+brew install libomp
+git clone --recursive https://github.com/microsoft/LightGBM
+cd LightGBM
+mkdir build
+cd build
+cmake ..
+make -j4
+
+(venv) san@Bee build % pip install --pre pycaret  s
